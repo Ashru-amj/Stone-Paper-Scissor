@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-grad-1: hsl(214, 47%, 23%);
+    --bg-grad-2: hsl(237, 49%, 15%);
+}
+
+body {
+    font-family: sans-serif;
+    background: radial-gradient(at top, var(--bg-grad-1), var(--bg-grad-2));
+}
+
+.container {
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-grad-1), var(--bg-grad-2);
+}
+
+.op1 {
+    background-color: var(--bg-grad-1), var(--bg-grad-2);
+}
+
+.container .op2 {
+    margin-top: -190px;
+    z-index: -1;
+    background-color: var(--bg-grad-1), var(--bg-grad-2);
+}
+
+.container1 {
+    padding-top: -30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.container1 h2 {
+    font-size: 50px;
+}
+
+.container1 h5 {
+    font-size: 19px;
+}
+
+
+
+
+.play-again {
+    background: #fff;
+    color: black;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 0.6rem;
+
+    padding: 0.2rem 0.5rem;
+    font-family: inherit;
+    text-transform: inherit;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.play-again:focus {
+    border: 2px solid var(--bg-grad-1), var(--bg-grad-2);
+    ;
+}
+
+
+.openButton {
+    font-size: 20px;
+    float: right;
+    width: 7rem;
+    /* position: fixed;  */
+    bottom: 0;
+    right: 0;
+    /* Position it on the right side of the screen */
+    background-color: #f0f0f0;
+    /* Optional: Add a background color */
+    padding: 10px;
+    /* Optional: Add some padding for spacing */
+    cursor: pointer;
+    margin-right: 2rem;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+#rulesContainer {
+    background-color: rgba(0, 68, 41, 1);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+    float: right;
+    font-size: 18px;
+    color: white;
+    border: 2px solid white;
+}
+
+#closeButton {
+    position: absolute;
+    bottom: 24.3rem;
+    right: 1px;
+    background: transparent;
+
+    cursor: pointer;
+
+    border-radius: 50px;
+    background-color: red;
+
+
+
+}

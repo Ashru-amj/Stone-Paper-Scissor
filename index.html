@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+
+    <title>Stone Paper Scissor </title>
+</head>
+
+<body class="preloading">
+    <div class="container_body">
+        <header class="header">
+            <h2 id="heading" style="float: left;"><span>Rock</span><br><span>Paper</span><br><span>Scissors</span></h2>
+            <div class="score">
+                <div class="score__title" id="amj1">Computer Score</div>
+                <div class="score__number">0</div>
+            </div>
+            <div class="score">
+                <div class="score__title">Your Score</div>
+                <div class="score__number">0</div>
+            </div>
+        </header>
+        <section class="game">
+            <button class="choice-btn" data-choice="paper">
+                <div class="choice paper">
+                    <img src="icon-imga.jpg" alt="Paper" />
+                </div>
+            </button>
+            <button class="choice-btn" data-choice="scissors">
+                <div class="choice scissors">
+                    <img src="icon-imgb.png" alt="Scissors" />
+                </div>
+            </button>
+            <button class="choice-btn" data-choice="rock">
+                <div class="choice rock">
+                    <img src="icon-imgc.jpg" alt="Rock" />
+                </div>
+            </button>
+        </section>
+    </div>
+
+    <section class="results hidden">
+        <h2 class="results__heading">PC PICKED</h2>
+        <h2 class="results__heading"> YOU PICKED</h2>
+        <div class="results__result"></div>
+        <div class="results__winner hidden">
+            <h3 class="results__text"></h3>
+            
+
+            <button class="play-again">Play Again</button>
+            <button class="replay">Replay</button>
+           
+            
+            
+
+        </div>
+        <div class="results__result"></div>
+
+    </section>
+
+
+
+    <div class="button">
+        
+        <button id="nextButton" class="hidden" href="end.html">Next</button>
+
+        <div> <button id="openButton" class="openButton">Rules</button>
+
+            <div id="rulesContainer" class="hidden">
+                <h2>Game Rules</h2>
+                <br>
+                <button id="closeButton"><img src="icon-close-removebg-preview.png"></button>
+                <p>
+                <ul>
+                    <li>
+                        Rock beats scissors,scissors beat paper,and paper beats rock.
+                    </li>
+                    <li>
+                        Agree ahead of time whether you'll count off "rock,paper,scissors,shoot" or just "rock,paper,scissors."
+                    </li>
+                    <li>
+                        Use rock,paper,scissors to settle minor decisions or simply play to pass the time.
+                    </li>
+                    <li>
+                        If both players lay down the same hand,each payer lays down another hand.
+                    </li>
+                </ul>
+
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
